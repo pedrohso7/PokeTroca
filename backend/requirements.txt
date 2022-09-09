@@ -1,0 +1,7 @@
+sqlite3
+grpcio
+grpcio-tools
+flask
+flask-jsonpify
+flask-restful
+flask-cors

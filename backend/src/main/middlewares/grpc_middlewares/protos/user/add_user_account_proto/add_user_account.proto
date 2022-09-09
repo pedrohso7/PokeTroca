@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package add_user_account;
+
+service AddUserAccount {
+  rpc makeUserAccountFactory (Request) returns (Response);
+}
+
+message Request {
+  string username = 1;
+  string password = 2;
+  string name = 3;
+}
+
+message Response {
+  int32 statusCode = 1;
+}
