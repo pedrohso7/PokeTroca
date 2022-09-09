@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package authenticate_user;
+
+service AuthenticateUser {
+  rpc makeAuthenticateUserFactory (Request) returns (Response);
+}
+
+message Request {
+  string username = 1;
+  string password = 2;
+}
+
+message Response {
+  int32 statusCode = 1;
+  optional int32 id = 2;
+  optional string username = 3;
+  optional string name = 4;
+  optional string message = 5;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package list_user_inventory;
+
+service ListUserInventory {
+  rpc makeListUserInventoryFactory (Request) returns (Response);
+}
+
+message Request {
+  int32 id = 1;
+}
+
+message Response {
+  int32 statusCode = 1;
+  int32 userid = 2;
+  string username = 3;
+  int32 inventoryid = 4;
+  repeated Inventory inventories = 5;
+  optional string message = 6;
+}
+
+message Inventory {
+  int32 pokemonid = 1;
+  string pokemonname = 2;
+  string pokemonimage = 3;
+}

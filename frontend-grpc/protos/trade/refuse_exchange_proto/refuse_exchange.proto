@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package refuse_exchange;
+
+service RefuseExchange {
+  rpc makeRefuseExchangeFactory (Request) returns (Response);
+}
+
+message Request {
+  int32 id = 1;
+}
+
+message Response {
+  int32 statusCode = 1;
+  optional string message = 13;
+}

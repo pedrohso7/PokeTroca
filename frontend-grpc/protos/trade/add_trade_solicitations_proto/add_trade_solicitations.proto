@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package add_trade_solicitations;
+
+service AddTradeSolicitations {
+  rpc makeAddTradeSolicitationsFactory (Request) returns (Response);
+}
+
+message Request {
+  int32 received_user_id = 1;
+  int32 sender_user_id = 2;
+  int32 want_pokemon_id = 3;
+  int32 give_pokemon_id = 4;
+}
+
+message Response {
+  int32 statusCode = 1;
+  optional string message = 2;
+}

@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package list_trade_solicitations;
+
+service ListTradeSolicitations {
+  rpc makeListTradeSolicitationsFactory (Request) returns (Response);
+}
+
+message Request {
+  int32 id = 1;
+}
+
+message Response {
+  int32 statusCode = 1;
+  repeated TradeList tradeList = 2;
+  optional string message = 3;
+}
+
+message TradeList {
+  int32 id = 1;
+  int32 received_user_id = 2;
+  int32 sender_user_id = 3;
+  int32 want_pokemon_id = 4;
+  int32 give_pokemon_id = 5;
+  string status = 6;
+  string want_pokemon_name = 7;
+  string want_pokemon_image = 8;
+  string give_pokemon_name = 9;
+  string give_pokemon_image = 10;
+  string received_user_name = 11;
+  string sender_user_name = 12;
+}

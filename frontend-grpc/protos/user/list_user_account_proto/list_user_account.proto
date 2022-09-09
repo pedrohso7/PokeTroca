@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package list_user_account;
+
+service ListUserAccount {
+  rpc makeListUserAccountFactory (Request) returns (Response);
+}
+
+message Request {
+  optional int32 id = 1;
+}
+
+// message User {
+//   int32 id = 1;
+//   string username = 2;
+//   string name = 3;
+// }
+
+message Response {
+  int32 statusCode = 1;
+  repeated User users = 2;
+  optional string message = 3;
+}
+
+message User {
+  int32 id = 1;
+  string username = 2;
+  string name = 3;
+}
