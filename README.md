@@ -74,6 +74,7 @@ And about the client logical layer, it was made inspired on the traditional MVC 
 </p>
 
 <h4>What about the communication?</h4>
+
 <p align="justify">
 First of all, before make PokeTroca, we planned to use a simple route system created by us to simulate, even in Sockets or RMI methods, the request-response approch. In other words, we always send a route and params from client and we always expect this on the server side too and the reciprocal is true. Doing like this, we only had to be worry with the communication, the study object of this repository. 
 </p>
@@ -83,7 +84,7 @@ This project implements, as we said, different kinds of comunication. At a first
 </p>
 
 <p align="justify">
-The second communication method was RMI <b>(Remote Method Invocation)</br> that instead of make a requisition and wait for some response, the client execute a pré defined remote call procedure shared between client and server through .proto archives. The gRPC (Google Remote Procedure Call) framework helps us use this archives and call the remote methods.
+The second communication method was RMI <b>(Remote Method Invocation)</b> that instead of make a requisition and wait for some response, the client execute a pré defined remote call procedure shared between client and server through .proto archives. The gRPC (Google Remote Procedure Call) framework helps us use this archives and call the remote methods.
 </p>
 
 <p align="justify">
@@ -97,38 +98,138 @@ PokeTroca platform wants to show you there are so many ways to plane an applicat
 ## ✦ PokeTroca UseCase Views
 
 <p align="middle">
-<img alt="Login View" title="App" src="https://user-images.githubusercontent.com/32853995/195891274-eaa8adf4-e57d-472b-97f1-af2077087537.png" width="400"/>
-<img alt="Register View" title="App" src="https://user-images.githubusercontent.com/32853995/195891331-8a53d8f6-5137-4b6a-9f53-a6a62c12131b.png" width="400"/>
-<img alt="Home View" title="App" src="https://user-images.githubusercontent.com/32853995/195891428-c9d4f94f-eb7e-46a4-b2e5-c0ab04b01917.png" width="400"/>
-<img alt="Inventory View" title="App" src="https://user-images.githubusercontent.com/32853995/195891477-88b8e008-3f1a-4775-837d-ae99d2791c17.png" width="400"/>
-<img alt="Trade View" title="App" src="https://user-images.githubusercontent.com/32853995/195891560-5c554ea1-3074-4c70-a242-e054bee0fdcf.png" width="400"/>
-<img alt="Barter's View" title="App" src="https://user-images.githubusercontent.com/32853995/195891625-7140f0c4-0511-405d-bdfb-be1436f0c0dd.png" width="400"/>
+<img alt="Login View" title="App" src="https://user-images.githubusercontent.com/32853995/195891274-eaa8adf4-e57d-472b-97f1-af2077087537.png" width="300"/>
+<img alt="Register View" title="App" src="https://user-images.githubusercontent.com/32853995/195891331-8a53d8f6-5137-4b6a-9f53-a6a62c12131b.png" width="300"/>
+<img alt="Home View" title="App" src="https://user-images.githubusercontent.com/32853995/195891428-c9d4f94f-eb7e-46a4-b2e5-c0ab04b01917.png" width="300"/>
+<img alt="Inventory View" title="App" src="https://user-images.githubusercontent.com/32853995/195891477-88b8e008-3f1a-4775-837d-ae99d2791c17.png" width="300"/>
+<img alt="Trade View" title="App" src="https://user-images.githubusercontent.com/32853995/195891560-5c554ea1-3074-4c70-a242-e054bee0fdcf.png" width="300"/>
+<img alt="Barter's View" title="App" src="https://user-images.githubusercontent.com/32853995/195891625-7140f0c4-0511-405d-bdfb-be1436f0c0dd.png" width="300"/>
 </p>
 
 ## ✦ Usage
 <p align="justify">
-First you have to create your .env file on root path following .env.example and then you're prepared to run and use the server.
+First you need to install Python3 to run the commands below, most times you already did it.
 </p>
-
 
 <p align="justify">
-Make sure you're on the root path and run the following command to get the dependencies using
+Make sure you're on the root path and follow the instructions below:
+</p>
+
+<h3>Server</h3>
+
+<p align="justify">
+Go to backend root path:
 </p>
 
 ```
-npm install
+cd backend
 ```
 
 <p align="justify">
-Now you can run server:
+Install the server dependencies with:
 </p>
 
 ```
-node src/index.js
+make setup
+```
+
+<p align="justify">
+Finally, choose the communication you want for the server and start running with the following:
+</p>
+
+<h4>Socket Server</h4>
+
+```
+make run-socket
+```
+
+<h4>gRPC Server</h4>
+
+```
+make run-grpc
+```
+
+<h4>Rest Server</h4>
+
+```
+make run
+```
+<h3>Client</h3>
+
+<h4>Socket Client</h4>
+
+<p align="justify">
+Go to socket client root path:
+</p>
+
+```
+cd frontend-socket
+```
+
+<p align="justify">
+Install dependencies with:
+</p>
+
+```
+make setup
+```
+
+Then run using:
+
+```
+make run
+```
+
+<h4>gRPC Client</h4>
+
+<p align="justify">
+Go to gRPC client root path:
+</p>
+
+```
+cd frontend-grpc
+```
+
+<p align="justify">
+Install dependencies with:
+</p>
+
+```
+make setup
+```
+
+Then run using:
+
+```
+make run
+```
+
+<h4>Rest Client</h4>
+
+<p align="justify">
+Go to rest client root path:
+</p>
+
+```
+cd frontend-socket
+```
+
+<p align="justify">
+Install dependencies with:
+</p>
+
+```
+make setup
+```
+
+Then run using:
+
+```
+make run
 ```
 
 ## ✦ Start to use
 
 <p align="justify">
-Clone this and use in your test.
+Clone this and use as example to study this mentioned communication methods.
 </p>
