@@ -220,7 +220,7 @@ Go to rest client root path:
 </p>
 
 ```
-cd frontend-socket
+cd frontend-rest
 ```
 
 <p align="justify">
