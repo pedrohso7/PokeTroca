@@ -20,7 +20,7 @@
 
 ## ✦ Project
 <p align="justify">
-PokeTroca is a distributed system of pokemon trade. This project gives to each registered user, ten random pokémons and you have to make the best team you can through good trades on the platform. With this project used three different communication between process for study reasons. 
+PokeTroca is a distributed system of pokemon trade. This project gives to each registered user, ten random pokémons and you have to make the best team you can through good trades on the platform. With this project we could use three different communication between process for study reasons. 
           
 The methods are:
 </p>
