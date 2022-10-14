@@ -31,6 +31,15 @@ The methods are:
 <li>Rest</li> 
 </ul>
 
+<p align="justify">
+Authors:
+</p>
+
+<ul>
+<li>Pedro Oliveira</li>
+<li>Samuel Costa Silva Nascimento</li>
+</ul>
+
 ## ✦ Technologies
 This project was made using the tecnologies below:
 - [Python](https://www.python.org/)
