@@ -101,7 +101,7 @@ Finally, the most used communication method, <b>Rest (Representational state tra
 </p>
 
 <p align="justify">
-PokeTroca platform wants to show you there are so many ways to plane an application and we have to consider the context and the goals it wants to reach. Make sure, before starts a new project, to keep in mind the plane phase have the same importance as the code phase to boost your success accuracy.
+PokeTroca platform wants to show you there are so many ways to plane an application and we have to consider the context and the goals it wants to reach. Make sure, before starts a new project, to keep in mind the plane phase have the same importance as the code phase to boost your success accuracy. For more details, you can visualize the project doc in root path.
 </p>
 
 ## ✦ PokeTroca UseCase Views
