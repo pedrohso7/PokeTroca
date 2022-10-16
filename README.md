@@ -101,7 +101,7 @@ Finally, the most used communication method, <b>Rest (Representational state tra
 </p>
 
 <p align="justify">
-PokeTroca platform wants to show you there are so many ways to plane an application and we have to consider the context and the goals it wants to reach. Make sure, before starts a new project, to keep in mind the plane phase have the same importance as the code phase to boost your success accuracy. For more details, you can visualize the project doc in root path.
+PokeTroca platform wants to show you there are so many ways to plane an application and we have to consider the context and the goals it wants to reach. Make sure, before starts a new project, to keep in mind the plane phase have the same importance as the code phase to boost your success accuracy. For more details, you can acess the project doc in root path.
 </p>
 
 ## ✦ PokeTroca UseCase Views
@@ -117,7 +117,7 @@ PokeTroca platform wants to show you there are so many ways to plane an applicat
 
 ## ✦ Usage
 <p align="justify">
-First you need to install Python3 to run the commands below, most times you already did it.
+First you need to install Python3 to run the commands below, most times linux OS's already have this.
 </p>
 
 <p align="justify">
@@ -161,7 +161,7 @@ make run-grpc
 <h4>Rest Server</h4>
 
 ```
-make run
+make run-rest
 ```
 <h3>Client</h3>
 
